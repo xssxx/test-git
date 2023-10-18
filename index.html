@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODOLIST</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- script for handle action with todo list -->
+    <script src="addTodoList.js"></script>
+
     <h1>TODOLIST</h1>
+    <input id="task" type="text" placeholder="task" />
+    <input id="time" type="time" placeholder="time" />
+    <button onclick="handleAdd()">Add</button>
+    <main id="container">
+      <div id="taskCard" class="task">
+        <div class="half">Task</div>
+        <div class="half">Time</div>
+      </div>
+    </main>
   </body>
 </html>
